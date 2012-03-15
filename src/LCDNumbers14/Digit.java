@@ -3,10 +3,8 @@ package LCDNumbers14;
 public class Digit {
     protected boolean bars[];
 
-    protected Digit() {
-        bars = new boolean[7];
-        for (int i = 0; i < 7; i++)
-            bars[i] = true;
+    protected Digit(boolean[] bars) {
+        this.bars = bars;
     }
 
     public final String display(int size) {
