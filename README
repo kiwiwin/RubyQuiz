@@ -1,1 +1,15 @@
-This file was created by IntelliJ IDEA 11.0 for binding GitHub repository
+There are many good practice problem at website http://www.rubyquiz.com/quiz14.html
+
+Because there are about hundreds of problems, So I will not create separate project for each problem.
+
+For each problem, there will be one src package whose name is the problem name and the problem index.
+
+And there are also test package associate with each problem.
+
+You can also find the problem statement in each package.
+
+
+Have fun of refactoring!!!
+
+Kiwi
+2012.3.15
