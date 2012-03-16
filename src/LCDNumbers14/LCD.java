@@ -3,7 +3,7 @@ package LCDNumbers14;
 import java.io.*;
 
 public class LCD {
-    private String number;
+    private final String number;
 
     public LCD(String number) {
         this.number = number;

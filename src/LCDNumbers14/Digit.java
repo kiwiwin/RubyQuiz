@@ -1,9 +1,9 @@
 package LCDNumbers14;
 
 public class Digit {
-    protected boolean bars[];
+    private final boolean[] bars;
 
-    protected Digit(boolean[] bars) {
+    Digit(boolean[] bars) {
         this.bars = bars;
     }
 

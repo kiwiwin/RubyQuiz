@@ -1,0 +1,3 @@
+Ignore,Punctuation
+Ignore Whitespace
+A

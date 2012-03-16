@@ -4,8 +4,8 @@ import java.io.*;
 
 import static junit.framework.Assert.*;
 
-public class JUnitFile {
-    public static void assertFile(String message, String fixtureDirectory, String fixtureFilename, String actual) {
+class JUnitFile {
+    public static void assertFile(String fixtureDirectory, String fixtureFilename, String actual) {
         try {
             BufferedReader fileReader = new BufferedReader(new FileReader(fixtureDirectory + fixtureFilename));
             BufferedReader actualReader = new BufferedReader(new StringReader(actual));
@@ -17,7 +17,7 @@ public class JUnitFile {
                 lineIndex++;
                 fileLine = fileLine.substring(0, fileLine.length() - 1);
                 String actualLine = actualReader.readLine();
-                assertEquals(message + " Line:" + lineIndex, fileLine, actualLine);
+                assertEquals(" Line:" + lineIndex, fileLine, actualLine);
             }
 
             if ((actualReader.readLine()) != null) {
